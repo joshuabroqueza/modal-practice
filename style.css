@@ -64,3 +64,38 @@ button {
   padding: 10px 25px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
 }
+
+.container > img {
+  height: 200px;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+}
+
+.item--price {
+  display: flex;
+  flex-direction: row;
+  flex: 1;
+  /* text-align: center; */
+}
+
+/*
+.currency {
+  flex: 0.45;
+ right: 0; 
+}
+*/
+
+.cartlist {
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.cartlist > div {
+  width: 100%;
+}

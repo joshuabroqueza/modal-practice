@@ -9,10 +9,20 @@
   </head>
   <body>
     <div class="body">
-      <button id="open">Click Me</button>
+      <div class="container">
+        <img
+          src="https://images.unsplash.com/photo-1603064752734-4c48eff53d05?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NHx8YnVyZ2VyfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+          alt=""
+        />
+        <div class="item--name" id="item_name">Burger</div>
+
+        <div class="price" id="item_price"><span>$</span>980</div>
+
+        <button id="open">Click Me</button>
+      </div>
 
       <div class="modal-container" id="modal_container">
-        <div class="modal">
+        <div class="modal" id="modaliD">
           <h1>Modals are cool</h1>
           <p>
             Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -20,6 +30,17 @@
             tenetur atque exercitationem? Sint dolorum nulla fuga placeat vel
             necessitatibus iste in, autem aliquid corporis optio?
           </p>
+          <div class="cartlist" id="cartlist_item">
+            <div class="added--itemname">Name</div>
+            <div class="add--itemquantity">Quantity</div>
+            <div class="add--itemprice">Price</div>
+          </div>
+          <div class="cartlist">
+            <div class="added--itemname">Burger</div>
+            <div class="add--itemquantity">1</div>
+            <div class="add--itemprice">98</div>
+          </div>
+
           <button id="close">Close me</button>
         </div>
       </div>
