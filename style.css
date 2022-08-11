@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.modal-container {
+  /* display: none; */
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.03);
+  transition: opacity 0.3s ease;
+
+  /* hiding the modal */
+  opacity: 0;
+
+  /* to click the button because the modal is overlapping */
+
+  pointer-events: none;
+}
+
+.modal {
+  background-color: white;
+  width: 600px;
+  max-width: 100%;
+  padding: 30px 60px;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
+
+.modal-container.show {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.modal h1 {
+  margin: 0;
+}
+
+.modal > p {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+button {
+  background-color: bisque;
+  border-radius: 5px;
+  padding: 10px 25px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.02);
+}
